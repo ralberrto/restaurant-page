@@ -6,18 +6,46 @@ const makeHeader = function() {
     return hdr;
 };
 
-const makeMainSection = function() {
+const makeCard = function(title, text) {
+    const card = document.createElement("div");
+    const titleBox = document.createElement("h2");
+    titleBox.textContent = title;
+    const body = document.createElement("p");
+    body.textContent = text;
+    card.appendChild(titleBox);
+    card.appendChild(body);
+    return card;
+};
+
+const makeHomeSection = function() {
     const section = document.createElement("section");
-    const p = document.createElement("p");
-    p.textContent = "Nuestra selección de mariscos cuidadosa y nuestros platillos exquisitos\
-        hacen de nosotros los mejores mariscos de la región.";
-    section.appendChild(p);
+
+    const descriptionCrd = makeCard(
+        "Acerca de nosotros",
+        "Con mas de 15 años de experiencia, nuestra selección de mariscos cuidadosa y nuestros platillos exquisitos\
+        hacen de nosotros los mejores mariscos de la región."
+        );
+    section.appendChild(descriptionCrd);
+
+    const hoursCrd = makeCard(
+        "Horario",
+        "De martes a sábado de 12 p.m. a 6 p.m.\n\
+        Domingo de 10 a.m. a 22 p.m."
+    );
+    section.appendChild(hoursCrd);
+
+    const locationCard = makeCard(
+        "Dirección",
+        "Avenida del Sol #44, frente al puente de Santa Elena."
+    )
+    section.appendChild(locationCard);
+
     return section;
 };
 
 const includeContent = function(container) {
     container.appendChild(makeHeader());
-    container.appendChild(makeMainSection());
+    container.appendChild(makeHomeSection());
 };
 
 export default includeContent;

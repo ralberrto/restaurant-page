@@ -3,13 +3,23 @@
     src: url("../src/Charmonman/Charmonman-Bold.ttf");
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
+:root {
+    --marine-blue: #213468;
+    --dark-gray: #444444;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    margin: 0;
+}
+
+div#container {
+    height: 100%;
 }
 
 header {
@@ -19,7 +29,7 @@ header {
     background: url("./images/05c127fa785b303592bbb69de9172ae7.jpg");
     background-position: bottom left;
     height: 20vh;
-    box-shadow: 2px 2px 2px #444444;
+    box-shadow: 2px 2px 2px var(--dark-gray);
 }
 
 header h1 {
@@ -27,6 +37,8 @@ header h1 {
     color: #d10208;
     font-weight: bolder;
     font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
     text-shadow: 3px 3px 1.5px white,
         3px -3px 1.5px white,
         -3px 3px 1.5px white,
@@ -39,6 +51,27 @@ header p {
 
 section {
     display: flex;
-    justify-content: center;
-    margin: 2vw;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5vw;
+}
+
+section > div {
+    background-color: var(--marine-blue);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px var(--dark-gray);
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+section > div:last-child {
+    margin-bottom: 0;
+}
+
+section > div > h2 {
+    font-family: "Charmonman";
+    margin: 0;
 }
