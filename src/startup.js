@@ -9,7 +9,7 @@ const makeHeader = function() {
 const makeMainSection = function() {
     const section = document.createElement("section");
     const p = document.createElement("p");
-    p.textContent = "Nuestra selección de mariscos cuidadosa y nuestros exquisitos platillos\
+    p.textContent = "Nuestra selección de mariscos cuidadosa y nuestros platillos exquisitos\
         hacen de nosotros los mejores mariscos de la región.";
     section.appendChild(p);
     return section;
