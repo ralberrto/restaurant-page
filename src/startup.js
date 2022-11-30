@@ -11,7 +11,7 @@ const makeCard = function(title, text) {
     const titleBox = document.createElement("h2");
     titleBox.textContent = title;
     const body = document.createElement("p");
-    body.textContent = text;
+    body.innerHTML = text;
     card.appendChild(titleBox);
     card.appendChild(body);
     return card;
@@ -29,7 +29,7 @@ const makeHomeSection = function() {
 
     const hoursCrd = makeCard(
         "Horario",
-        "De martes a sábado de 12 p.m. a 6 p.m.\n\
+        "De martes a sábado de 12 p.m. a 6 p.m.<br />\
         Domingo de 10 a.m. a 22 p.m."
     );
     section.appendChild(hoursCrd);

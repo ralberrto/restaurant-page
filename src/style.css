@@ -6,6 +6,7 @@
 :root {
     --marine-blue: #213468;
     --dark-gray: #444444;
+    --light-gray: #FBFBFB;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
+    background-color: var(--light-gray);
     margin: 0;
 }
 
@@ -28,7 +29,7 @@ header {
     justify-content: center;
     background: url("./images/05c127fa785b303592bbb69de9172ae7.jpg");
     background-position: bottom left;
-    height: 20vh;
+    height: max(15vh, 80px);
     box-shadow: 2px 2px 2px var(--dark-gray);
 }
 
