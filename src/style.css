@@ -18,7 +18,7 @@
     --sand: #AF9A7D;
     --light-sand: #EAE5D2;
 
-    --footer-height: 9vh;
+    --footer-height: max(9vh, 60px);
 }
 
 * {
@@ -80,6 +80,10 @@ section > div {
     box-shadow: 3px 3px 2px var(--dark-gray);
     text-align: justify;
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black,
+        -1px -1px 1px black;
 }
 
 section > div > hr {
