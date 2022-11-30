@@ -45,9 +45,11 @@ const makeHomeSection = function() {
     return section;
 };
 
-const includeContent = function(container) {
-    container.appendChild(makeHeader());
-    container.appendChild(makeHomeSection());
+const genContent = function() {
+    const cont = document.createElement("div");
+    cont.appendChild(makeHeader());
+    cont.appendChild(makeHomeSection());
+    return cont;
 };
 
-export default includeContent;
+export {genContent};

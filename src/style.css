@@ -11,10 +11,12 @@
 :root {
     --marine-blue: #213468;
     --dark-gray: #444444;
-    --background: #EAE5D2;
+    --background: #eeeeee;
     --dark-green: #49878D;
     --light-blue: #E1E8F5;
-    --footer: ;
+    --dark-blue: #0F0F0F;
+    --sand: #AF9A7D;
+    --light-sand: #EAE5D2;
 
     --footer-height: 9vh;
 }
@@ -48,7 +50,7 @@ header {
 
 header h1 {
     font-family: "Charmonman-Bold";
-    color: #AF9A7D;
+    color: var(--dark-blue);
     font-weight: bolder;
     font-size: 2rem;
     text-align: center;
@@ -109,7 +111,6 @@ footer {
     left: 0;
     height: var(--footer-height);
     width: 100vw;
-    box-shadow: 2px -2px 2px var(--dark-gray);
 }
 
 footer > button {
@@ -120,4 +121,12 @@ footer > button {
     border: none;
     font-family: "Charmonman";
     font-size: 1.5rem;
+    background-color: var(--sand);
+    color: var(--dark-blue);
+}
+
+footer > button.active {
+    font-family: "Charmonman-Bold";
+    background-color: var(--light-sand);
+    box-shadow: inset 3px 3px 3px var(--dark-gray);
 }
