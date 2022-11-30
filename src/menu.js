@@ -28,26 +28,26 @@ const makeCard = function(title, text, imgSrc) {
 const makeMenuSection = function() {
     const section = document.createElement("section");
 
-    const descriptionCrd = makeCard(
+    const dishSalmon = makeCard(
         "Salmón Zarandeao",
         "Nuestro rico Salmón Zarandeao, ligeramente picante y acompañado con arroz y ensalada de lechuga.",
         fish
         );
-    section.appendChild(descriptionCrd);
+    section.appendChild(dishSalmon);
 
-    const hoursCrd = makeCard(
+    const dishShrimp = makeCard(
         "Camarón Zarandeao",
         "Nuestro rico Camarón Zarandeao: tostado, ligeramente picante y acompañado con arroz y ensalada de lechuga.",
         shrimp
     );
-    section.appendChild(hoursCrd);
+    section.appendChild(dishShrimp);
 
-    const locationCard = makeCard(
+    const dishAguachile = makeCard(
         "Aguachile",
         "Aguachile de camarón, con chile verde y habanero, pepino, mango, piña y limón.",
         aguachile
     )
-    section.appendChild(locationCard);
+    section.appendChild(dishAguachile);
 
     return section;
 };
