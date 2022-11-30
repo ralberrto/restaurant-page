@@ -1,12 +1,19 @@
 @font-face {
-    font-family: "Charmonman";
+    font-family: "Charmonman-Bold";
     src: url("../src/Charmonman/Charmonman-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Charmonman";
+    src: url("../src/Charmonman/Charmonman-Regular.ttf");
 }
 
 :root {
     --marine-blue: #213468;
     --dark-gray: #444444;
-    --light-gray: #FBFBFB;
+    --background: #EAE5D2;
+    --dark-green: #49878D;
+    --light-blue: #E1E8F5;
 }
 
 * {
@@ -14,13 +21,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--light-gray);
+    background-color: var(--background);
     margin: 0;
 }
 
 div#container {
-    height: 100%;
+    flex: 1 0 100vh;
+    border: 3px solid var(--marine-blue);
 }
 
 header {
@@ -29,13 +39,13 @@ header {
     justify-content: center;
     background: url("./images/05c127fa785b303592bbb69de9172ae7.jpg");
     background-position: bottom left;
-    height: max(15vh, 80px);
+    height: max(18vh, 80px);
     box-shadow: 2px 2px 2px var(--dark-gray);
 }
 
 header h1 {
-    font-family: "Charmonman";
-    color: #d10208;
+    font-family: "Charmonman-Bold";
+    color: #AF9A7D;
     font-weight: bolder;
     font-size: 2rem;
     text-align: center;
@@ -58,14 +68,26 @@ section {
 }
 
 section > div {
-    background-color: var(--marine-blue);
     color: white;
     font-size: 1.2rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 2px 2px 2px var(--dark-gray);
+    box-shadow: 3px 3px 2px var(--dark-gray);
     text-align: justify;
     margin-bottom: 1rem;
+}
+
+section > div > hr {
+    margin: 0;
+    border: 1px solid var(--light-blue);
+}
+
+section > div:nth-child(odd) {
+    background-color: var(--dark-green);
+}
+
+section > div:nth-child(even) {
+    background-color: var(--marine-blue);
 }
 
 section > div:last-child {

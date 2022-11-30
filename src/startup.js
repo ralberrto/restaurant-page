@@ -13,6 +13,8 @@ const makeCard = function(title, text) {
     const body = document.createElement("p");
     body.innerHTML = text;
     card.appendChild(titleBox);
+    const line = document.createElement("hr");
+    card.appendChild(line);
     card.appendChild(body);
     return card;
 };
