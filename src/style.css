@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Charmonman";
+    src: url(../src/Charmonman/Charmonman-Bold.ttf);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./images/05c127fa785b303592bbb69de9172ae7.jpg");
+    background-position: bottom left;
+    height: 20vh;
+    box-shadow: 2px 2px 2px #444444;
+}
+
+header h1 {
+    font-family: "Charmonman";
+    color: #d6313c;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 3px 3px 1.5px white,
+        3px -3px 1.5px white,
+        -3px 3px 1.5px white,
+        -3px -3px 1.5px white;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
