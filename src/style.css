@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Charmonman";
-    src: url(../src/Charmonman/Charmonman-Bold.ttf);
+    src: url("../src/Charmonman/Charmonman-Bold.ttf");
 }
 
 body {

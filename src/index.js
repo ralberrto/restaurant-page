@@ -1,2 +1,5 @@
 import "./style.css";
-console.log("Hello, world!");
+import includeContent from "./startup.js";
+
+const container = document.querySelector("div#container");
+includeContent(container);
